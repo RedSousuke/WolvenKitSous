@@ -4,7 +4,7 @@
 <em>Image from https://wiki.redmodding.org/ </em>
 
 
-<h1>WolvenKit (for Cyberpunk 2077) Modified GUI</h1>
+<h1>WolvenKit (for Cyberpunk 2077) Modified GUI <em>Forked from https://github.com/WolvenKit/WolvenKit </em></h1>
 <p>
   A modified version of Wolvenkit fit to issues I experienced while using the application. Examples include: Unclear dialogues, missing or poorly implemented functionality, and unexplained errors.
   This will focus on the GUI for the application.
