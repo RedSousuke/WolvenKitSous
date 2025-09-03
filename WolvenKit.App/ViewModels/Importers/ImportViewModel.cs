@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,6 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using WolvenKit.App.Controllers;
 using WolvenKit.App.Helpers;
@@ -39,6 +40,9 @@ public partial class ImportViewModel : AbstractImportExportViewModel
     private readonly IGameControllerFactory _gameController;
     private readonly Red4ParserService _parserService;
     private readonly ImportExportHelper _importExportHelper;
+
+    [ObservableProperty] private bool _hasItems;
+
 
     public ImportViewModel(
         AppViewModel appViewModel,
@@ -292,6 +296,9 @@ public partial class ImportViewModel : AbstractImportExportViewModel
 
         ProcessAllCommand.NotifyCanExecuteChanged();
         _progressService.IsIndeterminate = false;
+
+        HasItems = Items.Any();
+
     }
 
     // for checking if a dds file is part of a morphtarget

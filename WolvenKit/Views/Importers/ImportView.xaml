@@ -207,7 +207,39 @@
                 <ColumnDefinition Width="3" />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
+            <!-- Placeholder: no files to import -->
+            <Border
+                Grid.Column="0"
+                Width="Auto"
+                Height="Auto"
+                BorderBrush="{StaticResource BorderAlt}"
+                BorderThickness="0,1,0,0"
+                Visibility="{Binding Path=HasItems,
+                                     Converter={StaticResource InvertBooleanVisibilityConverter}}">
+                <Grid VerticalAlignment="Center">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock
+                            Width="Auto"
+                            Margin="{DynamicResource WolvenKitMargin}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Foreground="#7EFFFFFF"
+                            FontSize="{DynamicResource WolvenKitFontHuge}"
+                            TextWrapping="Wrap"
+                            Text="No files to import" />
 
+                        <TextBlock
+                            Width="Auto"
+                            Margin="{DynamicResource WolvenKitMargin}"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Foreground="#7EFFFFFF"
+                            FontSize="{DynamicResource WolvenKitFontMedium}"
+                            TextWrapping="Wrap"
+                            Text="Add files to 'raw' to import them" />
+                    </StackPanel>
+                </Grid>
+            </Border>
             <!-- Files Grid -->
             <syncfusion:SfDataGrid
                 x:Name="ImportGrid"
@@ -268,7 +300,7 @@
                 Grid.Column="1"
                 HorizontalAlignment="Stretch" />
 
-            <!-- Special Import / Export Options -->
+            <!-- Special Import / export Options -->
             <!-- CollectionEditorOpening="PropertyGrid_CollectionEditorOpening" -->
             <Grid
                 Grid.Column="2"

@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.Win32;
 using WolvenKit.App.Interaction;
@@ -28,18 +28,56 @@ public class OpenFileViewModel : DialogViewModel
     {
         if (!_projectManager.IsProjectLoaded)
         {
-            throw new WolvenKitException(0x4003, "No project loaded");
+            throw new WolvenKitException(0x4003, """
+
+                ==============================================
+                No project loaded!
+                ----------------------------------------------
+
+                Please create or open a project. You can open
+                a new project by clicking
+                'Project' >> 'New Project'
+
+                ==============================================
+
+                """);
         }
 
         if (_settingsManager.ExtraModDirPath is null)
         {
-            throw new WolvenKitException(0x4001, "No extra mod directory configured");
+            throw new WolvenKitException(0x4001, """
+
+                ==============================================
+                No extra mod directory configured!
+                ----------------------------------------------
+
+                Please set a mod directory. You can do so by
+                clicking 'Tools' >> 'Settings' >> 'Additional
+                Mod directory'
+
+                ==============================================
+
+                """);
         }
 
         if (!Directory.Exists(_settingsManager.ExtraModDirPath))
         {
             throw new FileNotFoundException(
-                $"Directory not found: {_settingsManager.ExtraModDirPath}. Please make sure the directory exists and is writable.");
+                $"""
+
+                ==============================================
+                Can't find directory!
+                ----------------------------------------------
+
+                Directory not found:
+                {_settingsManager.ExtraModDirPath}.
+
+                Please make sure the directory exists and is
+                writable.
+
+                ==============================================
+
+                """);
         }
 
         var openFileDialog = new OpenFileDialog { Filter = Filter, Title = Title };
@@ -51,7 +89,13 @@ public class OpenFileViewModel : DialogViewModel
 
         if (openFileDialog.FileName is not string filePath)
         {
-            _loggerService.Info("No file selected.");
+            _loggerService.Info("""
+
+                ==============================================
+                PLEASE SELECT A FILE!
+                ==============================================
+
+                """);
             return null;
         }
 
