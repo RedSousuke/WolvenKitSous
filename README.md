@@ -17,6 +17,5 @@
     <li>Provide more responses in the log view to user actions and reduce error blob spitting</li>
     <li>Identify potentially dead menu items to fix or remove, <s>suspected dead items includes File>>Import>>Import .archive</s> </li>
     <li>Remove 'Continue to Editor' from the home pages, editor is useless without a project</li>
-    <li>Attempt to resove issue where dragging files into a project directory can delete it</li>
   </ul>
 </p>
