@@ -512,43 +512,6 @@
                                     VerticalAlignment="Center" />
                             </Grid>
                         </Button>
-
-                        <Button
-                            x:Name="ContinueWithoutProjectButton"
-                            Height="{DynamicResource WolvenKitWelcomeButtonHeight}"
-                            Margin="{DynamicResource WolvenKitWelcomeButtonMargin}"
-                            Padding="{DynamicResource WolvenKitWelcomeButtonPadding}"
-                            HorizontalAlignment="Stretch"
-                            BorderThickness="0"
-                            Style="{StaticResource WelcomeButton}">
-                            <Grid>
-                                <StackPanel
-                                    Height="{DynamicResource WolvenKitWelcomeStackHeight}"
-                                    Margin="{DynamicResource WolvenKitWelcomeStackMargin}">
-                                    <TextBlock
-                                        Width="{DynamicResource WolvenKitWelcomeButtonWidth}"
-                                        HorizontalAlignment="Center"
-                                        FontSize="{DynamicResource WolvenKitFontHeader}"
-                                        Text="Continue to editor" />
-
-                                    <TextBlock
-                                        Width="{DynamicResource WolvenKitWelcomeButtonWidth}"
-                                        HorizontalAlignment="Center"
-                                        Foreground="Gray"
-                                        FontSize="{DynamicResource WolvenKitFontSubTitle}"
-                                        Text="Access the WolvenKit Editor"
-                                        TextWrapping="Wrap" />
-                                </StackPanel>
-                                <iconPacks:PackIconCodicons
-                                    Kind="ArrowRight"
-                                    Width="{DynamicResource WolvenKitIconHuge}"
-                                    Height="{DynamicResource WolvenKitIconHuge}"
-                                    Margin="0"
-                                    HorizontalAlignment="Right"
-                                    VerticalAlignment="Center" />
-                            </Grid>
-                        </Button>
-
                         <!-- Socials Header -->
 
                         <StackPanel

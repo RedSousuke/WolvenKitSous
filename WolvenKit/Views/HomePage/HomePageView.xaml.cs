@@ -24,11 +24,6 @@ namespace WolvenKit.Views.HomePage
                         viewmodel => viewmodel.SelectedIndex,
                         view => view.HomeTabs.SelectedIndex)
                     .DisposeWith(disposables);
-
-                this.BindCommand(ViewModel,
-                        viewModel => viewModel.CloseHomePageCommand,
-                        view => view.ToEditorButton)
-                    .DisposeWith(disposables);
                 this.BindCommand(ViewModel,
                         viewModel => viewModel.CheckForUpdatesCommand,
                         view => view.CheckForUpdateButton)
