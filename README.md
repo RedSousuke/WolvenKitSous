@@ -16,7 +16,7 @@
     <li>Rephrase text to clarify what a user needs to do, for example: the export tool doesn't inform the user of where to add files</li>
     <li>Provide more responses in the log view to user actions and reduce error blob spitting</li>
     <li>Identify potentially dead menu items to fix or remove, <s>suspected dead items includes File>>Import>>Import .archive</s> </li>
-    <li>Adjust functionality of 'Continue to Editor' in the welcome menu to open the most recent project</li>
+    <li>Remove 'Continue to Editor' from the home pages, editor is useless without a project</li>
     <li>Attempt to resove issue where dragging files into a project directory can delete it</li>
   </ul>
 </p>
