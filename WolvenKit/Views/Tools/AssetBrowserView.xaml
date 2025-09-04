@@ -371,7 +371,7 @@
                             ColumnSizer="Auto"
                             AllowDeleting="False"
                             AllowDraggingColumns="False"
-                            AllowDraggingRows="False"
+                            AllowDraggingRows="True"
                             AllowEditing="False"
                             AllowFiltering="True"
                             AllowResizingColumns="True"

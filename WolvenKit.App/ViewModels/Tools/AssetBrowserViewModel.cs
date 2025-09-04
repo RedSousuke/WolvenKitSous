@@ -238,7 +238,6 @@ public partial class AssetBrowserViewModel : ToolViewModel
     [ObservableProperty]
     private ObservableCollectionEx<IGameArchive> _addFromArchiveItems = new();
 
-
     [NotifyCanExecuteChangedFor(nameof(CopyRelPathCommand))]
     [NotifyCanExecuteChangedFor(nameof(CopyRelPathFileNameCommand))]
     [ObservableProperty]
