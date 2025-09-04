@@ -48,40 +48,7 @@
                 <RowDefinition />
             </Grid.RowDefinitions>
 
-            <!-- Left Bottom Button -->
-            <Button
-                x:Name="ToEditorButton"
-                Grid.Row="0"
-                Margin="4,4,4,30"
-                Padding="0"
-                HorizontalAlignment="Stretch"
-                Background="{StaticResource ContentBackgroundAlt}"
-                BorderThickness="0">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-
-                    <TextBlock
-                        Width="{DynamicResource WolvenKitHomeButtonWidth}"
-                        Padding="{DynamicResource WolvenKitMarginLeft}"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        Foreground="White"
-                        FontSize="{DynamicResource WolvenKitFontBody}"
-                        Text="Continue to editor" />
-
-                    <iconPacks:PackIconCodicons
-                        Grid.Column="1"
-                        Kind="ArrowRight"
-                        Width="{DynamicResource WolvenKitIconBig}"
-                        Height="{DynamicResource WolvenKitIconBig}"
-                        HorizontalAlignment="Right"
-                        VerticalAlignment="Center" />
-                </Grid>
-            </Button>
-
+            
             <!-- Left Bottom Version Number -->
             <StackPanel
                 Grid.Row="1"
@@ -140,9 +107,9 @@
                                 <Border
                                     x:Name="Border"
                                     Margin="{DynamicResource WolvenKitMarginSmallLeft}"
-                                    Background="{TemplateBinding Background}"
+                                    Background="#232635"
                                     BorderBrush="{TemplateBinding BorderBrush}"
-                                    BorderThickness="3,0,0,0">
+                                    BorderThickness="3,3,3,3">
                                     <ContentPresenter
                                         x:Name="ContentSite"
                                         Width="{DynamicResource WolvenKitHomeButtonWidth}"
@@ -193,7 +160,7 @@
                                         Grid.Row="0"
                                         Grid.RowSpan="2"
                                         Grid.Column="0"
-                                        Background="{StaticResource ContentBackgroundAlt}" />
+                                        Background="#232635" />
 
                                     <Border
                                         Grid.Row="0"
