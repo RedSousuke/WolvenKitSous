@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <Platforms>x64</Platforms>
     <TargetFramework>net8.0-windows10.0.17763</TargetFramework>
@@ -1774,7 +1774,7 @@
     <None Remove="Resources\SyntaxHighlighting\JavaScript-DarkMode.xshd" />
     <None Remove="Resources\SyntaxHighlighting\YAML.xshd" />
     <None Remove="sample.mp4" />
-    <None Remove="SplashScreen1.png" />
+    <None Remove="Resources\Media\Images\Application\SplashScreen1.png" />
     <None Remove="TaskBarIcon.ico" />
   </ItemGroup>
 
@@ -1791,7 +1791,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <SplashScreen Include="SplashScreen1.png" />
+    <SplashScreen Include="Resources\Media\Images\Application\SplashScreen1.png" />
   </ItemGroup>
 
   <ItemGroup>

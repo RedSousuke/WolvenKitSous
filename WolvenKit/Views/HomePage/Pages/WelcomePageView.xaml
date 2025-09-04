@@ -270,10 +270,11 @@
             Grid.Row="0"
             Grid.Column="1"
             Grid.ColumnSpan="2"
-            Margin="66,30,66,20"
+            Margin="66,-10,66,20"
             HorizontalAlignment="Center"
+            Height="200"
             RenderOptions.BitmapScalingMode="HighQuality"
-            Source="pack://application:,,,/Resources/Media/Images/Application/wkit_logo_text_singlestack_white.png" />
+            Source="pack://application:,,,/Resources/Media/Images/Application/SplashScreen1.png" />
 
         <!-- Left Column \ Projects -->
         <Grid
